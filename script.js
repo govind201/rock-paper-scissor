@@ -1,10 +1,10 @@
-function getComputerSelection() {
+const getComputerSelection = () => {
     const responses = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * responses.length);
     return responses[randomIndex];
 }
 
-function playRound(playerSelection, computerSelection) {
+const playRound = (playerSelection, computerSelection) => {
     if (playerSelection === "rock") {
         switch (computerSelection) {
             case "rock":
@@ -47,8 +47,7 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
-
-function playGame(rounds) {
+const playGame = (rounds) => {
     let playerScore = 0;
     let computerScore = 0;
 
