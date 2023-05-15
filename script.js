@@ -89,4 +89,3 @@ const playGame = (rounds) => {
 
 const rounds = prompt("Enter number of rounds:");
 playGame(rounds);
- 
